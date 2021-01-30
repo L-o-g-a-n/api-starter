@@ -13,7 +13,7 @@ exports.errorHandler = (err, req, res) => {
     code,
     message,
   };
-
+  
   console.error(err);
   res.status(status).json(response);
 };
