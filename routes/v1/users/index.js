@@ -5,11 +5,12 @@ const router = Router();
 
 
 router.use('/hello', (req,res,next) => {
+    console.log('nice to meet U !!!');
     res.send('hi');
 });
 
 router.use('/he', (req,res,next) => {
-    next();
+    res.send('test');
 });
 
 
